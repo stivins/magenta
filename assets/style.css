@@ -777,342 +777,7 @@ footer img{
     }
 }
 
-@media screen and (max-width:450px) {
-    .burger{
-        display: flex;
-        z-index: 5;
-    }
 
-    /*  */
-
-    /* скрываем чекбокс */
-    #menu__toggle {
-    opacity: 0;
-    }
-
-    .menu__btn {
-        display: flex; 
-        align-items: center; 
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        width: 26px;
-        height: 26px;
-        cursor: pointer;
-        z-index: 1;
-    }
-
-    .menu__btn > span,
-    .menu__btn > span::before,
-    .menu__btn > span::after {
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        background-color: #616161;
-    }
-    .menu__btn > span::before {
-        content: '';
-        top: -8px;
-    }
-    .menu__btn > span::after {
-        content: '';
-        top: 8px;
-    }
-    
-    .menu__box {
-        display: block;
-        position: fixed;
-        visibility: hidden;
-        top: 0;
-        left: 100%;
-        width: 320px;
-        height: 100%;
-        margin: 0;
-        padding: 80px 0;
-        list-style: none;
-        text-align: center;
-        background-color: #ECEFF1;
-        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
-    }
-    /* элементы меню */
-    .menu__item {
-        display: block;
-        padding: 12px 24px;
-        color: #333;
-        font-family: 'Roboto', sans-serif;
-        font-size: 20px;
-        font-weight: 600;
-        text-decoration: none;
-        
-    }
-    .menu__item:hover {
-        background-color: #CFD8DC;
-    }
-    
-    #menu__toggle:checked ~ .menu__btn > span {
-        transform: rotate(45deg);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::before {
-        top: 0;
-        transform: rotate(0);
-    }
-    #menu__toggle:checked ~ .menu__btn > span::after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-    #menu__toggle:checked ~ .menu__box {
-        visibility: visible;
-        left: 0;
-    }
-
-    header{
-        width: 95%;
-        margin: 20px auto;
-    }
-
-    .header_call{
-        display: none;
-    }
-    
-    .header_nav{
-        display: none;  
-    }
-    
-    /* catalog */
-    
-    .catalog{
-        width: 90%;
-        margin: 40px auto;
-        display: flex;
-        flex-direction: column;
-        /* gap: 10px 0;
-        grid-template-columns: 366px; */
-    }
-    
-    .cartochka{
-        width: 300px;
-    }
-
-    .photo{
-        width: 300px;
-    }
-    
-    .catalog_hover{
-        width: 300px;
-        height: 240px;
-    }
-    
-    .catalog_hover2{
-        width: 300px;
-        height: 240px;
-    }
-    
-    .catalog_hover3{
-        width: 300px;
-        height: 240px;
-    }
-    
-    .catalog_hover4{
-        width: 300px;
-        height: 240px;
-    }
-    
-    .catalog_hover5{
-        width: 300px;
-        height: 240px;
-    }
-    
-    .catalog_hover6{
-        width: 300px;
-        height: 240px;
-    }
-    
-    /* statistic */
-    
-    .statistic{
-        width: 80%;
-        margin: 20px auto;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .stat_team{
-        width: 100%;
-        margin-top: 20px;
-    }
-    
-    /* about */
-
-    .title{
-        font-size: 20px;
-    }
-    
-    .about_us{
-        width: 80%;
-        margin: 40px auto;
-    }
-    
-    /* brands */
-    
-    .brands{
-        width: 80%;
-        margin: 20px auto;
-    }
-    
-    .brands_stroke{
-        padding: 10px 0;
-    }
-
-    .brands_img{
-        width: 60px;
-    }
-    
-    /* popular */
-    
-    .popular{
-        width: 80%;
-        margin: 30px auto;
-    }
-    
-    .popular_content{
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-    }
-    
-    .popular_team{
-        margin-top: 20px;
-    }
-    
-    /* footer */
-    
-    footer{
-        width: 90%;
-        flex-direction: column;
-    }
-    
-    .menu_title{
-        font-size: 20px;
-        color: #000;
-        font-weight: 600;
-        margin-bottom: 20px;    
-    }
-    
-    .menu_nav{
-        margin-bottom: 30px;
-    }
-    
-    .contacts{
-        margin-bottom: 30px;
-    }
-    
-    .city{
-        color: #E31E70;
-        font-weight: 500;
-        padding-bottom: 2px;
-    }
-    
-    .phones{
-        text-decoration: none;
-        color: #000;
-    }
-    
-    .email{
-        color: #000;
-        font-weight: 500;
-        padding-bottom: 5px;
-    }
-    
-    footer img{
-        width: 160px;
-    }
-    /*  */
-    /* index 2 */
-    /*  */
-    
-    .all_sale{
-        width: 90%;
-    }
-    /*  */
-    /* index 3 */
-    /*  */
-    
-    .delivery{
-        width: 90%;
-    }
-    
-    /*  */
-    /* index 3 */
-    /*  */
-    .contacts_karta{
-        width: 90%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .karta{
-        width: 100%;
-        height: 200px;
-        margin-bottom: 20px;
-    }
-    
-    /*  */
-    /* index 5 */
-    /*  */
-    
-    .card{
-        width: 90%;
-        margin: 20px auto;
-        padding: 30px 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-    .card_img{
-        margin-bottom: 20px;
-    }
-    
-    .card_left{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .card_right{
-        width: 90%;
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        flex-direction: column;
-        margin-left: 0px;
-    }
-    
-    .card_title{
-        margin: 20px 0;
-        font-size: 30px;
-    }
-    
-    .card_sub{
-        color: #727272;
-        line-height: 1.5;
-        text-align: justify;
-    }
-    
-    .card_har{
-        width: 95%;
-        font-weight: 500;
-        display: flex;
-        justify-content: space-between;
-    }
-}
 
 @media screen and (max-width: 850px){
 
@@ -1372,5 +1037,342 @@ footer img{
     
     .card{
         width: 95%;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .burger{
+        display: flex;
+        z-index: 5;
+    }
+
+    /*  */
+
+    /* скрываем чекбокс */
+    #menu__toggle {
+    opacity: 0;
+    }
+
+    .menu__btn {
+        display: flex; 
+        align-items: center; 
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 100%;
+        width: 320px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        
+    }
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+    
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    header{
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .header_call{
+        display: none;
+    }
+    
+    .header_nav{
+        display: none;  
+    }
+    
+    /* catalog */
+    
+    .catalog{
+        width: 90%;
+        margin: 40px auto;
+        display: grid;
+        gap: 10px 0;
+        grid-template-columns: 360px;
+    }
+    
+    .cartochka{
+        width: 300px;
+    }
+
+    .photo{
+        width: 300px;
+    }
+    
+    .catalog_hover{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover2{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover3{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover4{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover5{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover6{
+        width: 300px;
+        height: 240px;
+    }
+    
+    /* statistic */
+    
+    .statistic{
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .stat_team{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* about */
+
+    .title{
+        font-size: 20px;
+    }
+    
+    .about_us{
+        width: 80%;
+        margin: 40px auto;
+    }
+    
+    /* brands */
+    
+    .brands{
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .brands_stroke{
+        padding: 10px 0;
+    }
+
+    .brands_img{
+        width: 50px;
+    }
+    
+    /* popular */
+    
+    .popular{
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+    .popular_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .popular_team{
+        margin-top: 20px;
+    }
+    
+    /* footer */
+    
+    footer{
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .menu_title{
+        font-size: 20px;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 20px;    
+    }
+    
+    .menu_nav{
+        margin-bottom: 30px;
+    }
+    
+    .contacts{
+        margin-bottom: 30px;
+    }
+    
+    .city{
+        color: #E31E70;
+        font-weight: 500;
+        padding-bottom: 2px;
+    }
+    
+    .phones{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .email{
+        color: #000;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+    
+    footer img{
+        width: 160px;
+    }
+    /*  */
+    /* index 2 */
+    /*  */
+    
+    .all_sale{
+        width: 90%;
+    }
+    /*  */
+    /* index 3 */
+    /*  */
+    
+    .delivery{
+        width: 90%;
+    }
+    
+    /*  */
+    /* index 3 */
+    /*  */
+    .contacts_karta{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .karta{
+        width: 100%;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    /*  */
+    /* index 5 */
+    /*  */
+    
+    .card{
+        width: 90%;
+        margin: 20px auto;
+        padding: 30px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .card_img{
+        margin-bottom: 20px;
+    }
+    
+    .card_left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .card_right{
+        width: 90%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    
+    .card_title{
+        margin: 20px 0;
+        font-size: 30px;
+    }
+    
+    .card_sub{
+        color: #727272;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    
+    .card_har{
+        width: 95%;
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
     }
 }
