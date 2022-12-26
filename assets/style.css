@@ -591,3 +591,592 @@ footer img{
     justify-content: space-between;
 }
 
+@media screen and (max-width: 1235px){
+
+    header{
+        width: 95%;
+        margin: 40px auto;
+    }
+    
+    .header_call{
+        width: 35%;
+    }
+    
+    .phone{
+        font-size: 16px;
+    }
+    
+    .phone_sub{
+        padding-top: 8px;
+        font-size: 10px;
+    }
+    
+    .header_btn{
+        font-size: 16px;
+        width: 200px;
+        height: 50px;
+    }
+    
+    .nav_link_1{
+        font-size: 16px;
+    }
+    
+    .nav_link{
+        font-size: 16px;
+    }
+    
+    .poisk{
+        font-size: 16px;
+    }
+
+    
+    /* catalog */
+    
+    .catalog{
+        width: 90%;
+        margin: 40px auto;
+        display: grid;
+        gap: 10px 40px;
+        grid-template-columns: 300px 300px 300px;
+    }
+
+    .photo{
+        width: 320px;
+    }
+    
+    .catalog_hover{
+        width: 320px;
+        height: 250px;
+    }
+    
+    .catalog_hover2{
+        width: 320px;
+        height: 250px;
+    }
+    
+    .catalog_hover3{
+        width: 320px;
+        height: 250px;
+    }
+    
+    .catalog_hover4{
+        width: 320px;
+        height: 250px;
+    }
+    
+    .catalog_hover5{
+        width: 320px;
+        height: 250px;
+    }
+    
+    .catalog_hover6{
+        width: 320px;
+        height: 250px;
+    }
+    
+    /* statistic */
+    
+    .statistic{
+        width: 95%;
+    }
+    
+    .stat_team{
+        width: 244px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat_txt{
+        font-size: 16px;
+    }
+    
+    /* about */
+    
+    .about_us{
+        width: 95%;
+        margin: 50px auto;
+    }
+    
+    .title{
+        font-size: 26px;
+    }
+    
+    .about_txt{
+        font-size: 16px;
+    }
+    
+    /* brands */
+    
+    .brands{
+        width: 95%;
+        margin: 40px auto;
+    }
+
+    .brands_img{
+        width: 190px;
+    }
+    
+    /* popular */
+    
+    .popular{
+        width: 95%;
+    }
+    
+    .popular_team{
+        width: 200px;
+        height: 300px;
+    }
+
+    .pop_img{
+        width: 150px;
+    }
+    
+    /* footer */
+    
+    footer{
+        width: 95%;
+    }
+    
+    /*  */
+    /* index 2 */
+    /*  */
+    
+    .all_sale{
+        width: 95%;
+    }
+    
+    /*  */
+    /* index 3 */
+    /*  */
+    
+    .delivery{
+        width: 95%;
+    }
+    
+    /*  */
+    /* index 3 */
+    /*  */
+    .contacts_karta{
+        width: 95%;
+    }
+    
+    /*  */
+    /* index 5 */
+    /*  */
+    
+    .card{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .burger{
+        display: flex;
+    }
+
+    /*  */
+
+    /* скрываем чекбокс */
+    #menu__toggle {
+    opacity: 0;
+    }
+
+    .menu__btn {
+        display: flex; 
+        align-items: center; 
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #616161;
+    }
+    .menu__btn > span::before {
+        content: '';
+        top: -8px;
+    }
+    .menu__btn > span::after {
+        content: '';
+        top: 8px;
+    }
+    
+    .menu__box {
+        display: block;
+        position: fixed;
+        visibility: hidden;
+        top: 0;
+        left: 100%;
+        width: 320px;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        text-align: center;
+        background-color: #ECEFF1;
+        box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+    /* элементы меню */
+    .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: #333;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    .menu__item:hover {
+        background-color: #CFD8DC;
+    }
+    
+    #menu__toggle:checked ~ .menu__btn > span {
+        transform: rotate(45deg);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+    }
+    #menu__toggle:checked ~ .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+    }
+    #menu__toggle:checked ~ .menu__box {
+        visibility: visible;
+        left: 0;
+    }
+
+    header{
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .header_call{
+        display: none;
+    }
+    
+    .header_nav{
+        display: none;  
+    }
+    
+    /* catalog */
+    
+    .catalog{
+        width: 90%;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        /* gap: 10px 0;
+        grid-template-columns: 366px; */
+    }
+    
+    .cartochka{
+        width: 300px;
+    }
+
+    .photo{
+        width: 300px;
+    }
+    
+    .catalog_hover{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover2{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover3{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover4{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover5{
+        width: 300px;
+        height: 240px;
+    }
+    
+    .catalog_hover6{
+        width: 300px;
+        height: 240px;
+    }
+    
+    /* statistic */
+    
+    .statistic{
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .stat_team{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    /* about */
+
+    .title{
+        font-size: 20px;
+    }
+    
+    .about_us{
+        width: 80%;
+        margin: 40px auto;
+    }
+    
+    /* brands */
+    
+    .brands{
+        width: 80%;
+        margin: 20px auto;
+    }
+    
+    .brands_stroke{
+        padding: 10px 0;
+    }
+
+    .brands_img{
+        width: 60px;
+    }
+    
+    /* popular */
+    
+    .popular{
+        width: 80%;
+        margin: 30px auto;
+    }
+    
+    .popular_content{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    .popular_team{
+        margin-top: 20px;
+    }
+    
+    /* footer */
+    
+    footer{
+        width: 90%;
+        flex-direction: column;
+    }
+    
+    .menu_title{
+        font-size: 20px;
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 20px;    
+    }
+    
+    .menu_nav{
+        margin-bottom: 30px;
+    }
+    
+    .contacts{
+        margin-bottom: 30px;
+    }
+    
+    .city{
+        color: #E31E70;
+        font-weight: 500;
+        padding-bottom: 2px;
+    }
+    
+    .phones{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .email{
+        color: #000;
+        font-weight: 500;
+        padding-bottom: 5px;
+    }
+    
+    footer img{
+        width: 160px;
+    }
+    
+    
+    /*  */
+    /* index 2 */
+    /*  */
+    
+    .all_sale{
+        width: 1240px;
+        margin: 0px auto;
+        padding: 20px 0;
+    }
+    
+    .sale{
+        margin: 50px 0;
+    }
+    
+    .sale_title{
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #000;
+    }
+    
+    .sale_sub{
+        font-weight: 500;
+        color: #7F7F7F;
+        line-height: 1.5;
+    }
+    
+    /*  */
+    /* index 3 */
+    /*  */
+    
+    .delivery{
+        width: 1240px;
+        margin: 0 auto;
+        padding: 20px 0;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .delivery_title{
+        font-size: 20px;
+        color: #000;
+        font-weight: 600;
+    }
+    
+    .delivery_title >span{
+        font-weight: 400;
+    }
+    
+    .delivery_sub{
+        font-weight: 500;
+        font-size: 18px;
+        color: #727272;
+        margin-bottom: 30px;
+        margin-top: 20px;
+        text-align: justify;
+    }
+    
+    
+    /*  */
+    /* index 3 */
+    /*  */
+    .contacts_karta{
+        width: 1240px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .contacts_text{
+        margin-top: 30px;
+    }
+    
+    .adress{
+        color: #E31E70;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+    
+    .phones_1{
+        text-decoration: none;
+        color: #000;
+    }
+    
+    .email_1{
+        color: #000;
+        font-weight: 500;
+        padding-top: 5px;
+        padding-bottom: 25px;
+    }
+    
+    /*  */
+    /* index 5 */
+    /*  */
+    
+    .card{
+        width: 1240px;
+        margin: 20px auto;
+        padding: 30px 40px;
+        display: flex;
+        justify-content: space-between;
+        
+        border: #E31E70 2px solid;
+        border-radius: 5px;
+    }
+    
+    .card_img{
+        margin-bottom: 20px;
+    }
+    
+    .card_left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .card_btn{
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 15px;
+        background-color: #E31E70;
+        margin-top: 10px;
+        border-radius: 5px;
+        border: #E31E70 2px solid;
+    }
+    
+    .card_btn:hover{
+        color: #E31E70;
+        background-color: #fff;
+        border: #E31E70 2px solid;
+        
+    }
+    
+    .card_right{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 25px;
+    }
+    
+    .card_title{
+        font-size: 35px;
+    }
+    
+    .card_sub{
+        color: #727272;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    
+    .card_har{
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
