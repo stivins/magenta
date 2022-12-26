@@ -22,6 +22,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .header_call{
@@ -65,11 +66,14 @@ header{
 
 .header_nav{
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
     border-top: 1px #7F7F7F solid;
     border-bottom: 1px #7F7F7F solid;
-    margin: 40px 0;
+}
+
+.header_nav_nav{
+    margin: 20px 0;
 }
 
 .nav{
@@ -77,7 +81,7 @@ header{
 }
 
 .nav_link_1{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: white;
@@ -86,7 +90,7 @@ header{
 }
 
 .nav_link{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-decoration: none;
     color: #E31E70;
@@ -102,7 +106,6 @@ header{
 .header_form{
     display: flex;
     align-items: center;
-    margin-left: 260px;
 }
 
 .poisk{
